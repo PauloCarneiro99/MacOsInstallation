@@ -12,7 +12,7 @@ brew install tree
 
 # Python3 and some configurations
 brew install python3 &&
-python3 -m pip install black jupyter jupyterthemes ipython
+python3 -m pip install black jupyter jupyterthemes ipython virtualenv &&
 jt -t monokai
 
 
@@ -41,8 +41,8 @@ code --install-extension yzhang.markdown-all-in-one
 
 
 # install fish and omf
-brew install fish
-chsh -s $(which fish)
-curl -L "https://get.oh-my.fish" | fish
-omf install bobthefish
-echo  'set -g theme_powerline_fonts no' | tee -a ~/.config/fish/config.fish
+brew install fish &&
+chsh -s $(which fish) &&
+curl -L "https://get.oh-my.fish" | fish &&
+omf install bobthefish &&
+echo  'set -g theme_powerline_fonts no' | tee -a ~/.config/fish/config.fish &&
