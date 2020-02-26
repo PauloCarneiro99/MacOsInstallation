@@ -1,0 +1,30 @@
+VSCODE CONFIGURATION
+
+CMD + SHIFT + P, type shell command and select Install code command in path
+CMD + SHIFT + P, type preferences json
+# SO PRECISA MUDAR O PYTHON PATH
+{
+    "python.pythonPath": "/Users/paulocarneiro/Birdie/bin/python",
+    "python.formatting.blackArgs": [
+        "--line-length",
+        "100"
+    ],
+    "editor.rulers": [
+        100
+    ],
+    "python.formatting.provider": "black",
+    "window.zoomLevel": 2,
+    "workbench.iconTheme": "Monokai Pro (Filter Spectrum) Icons",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.formatOnSave": true,
+    "editor.fontFamily": "Fira Code Retina, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": true
+}
+
+
+
+
+DOCKER DMG
+https://download.docker.com/mac/stable/Docker.dmg
+
+
