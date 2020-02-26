@@ -16,6 +16,12 @@ python3 -m pip install black jupyter jupyterthemes ipython
 jt -t monokai
 
 
+#config git
+git config --global core.editor vim
+git config --global user.name "paulocarneiro99"
+git config --global user.email "paulo_carneiro@usp.br"
+
+
 # configure vscode
 code --install-extension azemoh.one-monokai
 code --install-extension eamodio.gitlens
@@ -37,6 +43,6 @@ code --install-extension yzhang.markdown-all-in-one
 # install fish and omf
 brew install fish
 chsh -s $(which fish)
-curl -L https://get.oh-my.fish | fish
+curl -L "https://get.oh-my.fish" | fish
 omf install bobthefish
 echo  'set -g theme_powerline_fonts no' | tee -a ~/.config/fish/config.fish
