@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# Brew
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" &&
+brew update &&
+brew cask install slack &&
+brew cask install google-chrome &&
+brew cask install visual-studio-code &&
+brew cask install spotify &&
+brew install git &&
+brew install tree
+
+# Python3 and some configurations
+brew install python3 &&
+python3 -m pip install black jupyter jupyterthemes ipython
+jt -t monokai
+
+
+# configure vscode
+code --install-extension azemoh.one-monokai
+code --install-extension eamodio.gitlens
+code --install-extension fatihacet.gitlab-workflow
+code --install-extension GrapeCity.gc-excelviewer
+code --install-extension humao.rest-client
+code --install-extension KnisterPeter.vscode-github
+code --install-extension mohsen1.prettify-json
+code --install-extension monokai.theme-monokai-pro-vscode
+code --install-extension ms-azuretools.vscode-docker
+code --install-extension ms-python.python
+code --install-extension ms-vscode.cpptools
+code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension njpwerner.autodocstring
+code --install-extension ryu1kn.partial-diff
+code --install-extension yzhang.markdown-all-in-one
+
+
+# install fish and omf
+brew install fish
+chsh -s $(which fish)
+curl -L https://get.oh-my.fish | fish
+omf install bobthefish
+echo  'set -g theme_powerline_fonts no' | tee -a ~/.config/fish/config.fish
