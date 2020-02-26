@@ -1,0 +1,18 @@
+######### THIS IS NOT A BASH SCRIPT, COPY THE FUNCTIONS IN THE FISH SHELL ##############
+
+
+function klogs
+	kubectl logs -f $argv
+end
+funsave klogs
+
+function kgp
+	kubectl get pods
+end
+funcsave kgp
+
+function .venv
+	python3 -m virtualenv .venv
+	source .venv/bin/activate.fish
+end
+funcsave .venv
